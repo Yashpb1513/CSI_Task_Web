@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Arial;
+  background-color: black;
+  background-image: url("https://ipfs.io/ipfs/bafybeicass6d3ftqyfigxciwfysnzm4aobfjuk4zvtueenvqqpjo3p75ju");
+  background-repeat: no-repeat;
+  background-size: 100%;
+ 
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(220, 20, 60,0.6);
+  font-family: 'Lobster', cursive;
+}
+.main-nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.toggle-button{
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+ .toggle-button .bar{
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  border-radius: 10px;
+}
+.heading{
+font-size: 2.5rem;
+margin: 1rem;
+}
+.main-nav li {
+  list-style: none;
+  padding: 20px;
+  display: block;
+  font-size: 1.2em;
+}
+.main-nav li a{
+  text-decoration: none;
+  color: black;
+  padding: rem;
+  display: block;
+}
+.main-nav li:hover{
+  background-color: rgba(220, 20, 60,0.4);
+  transition: all 500ms;
+}
+@media (max-width: 800px){
+  .toggle-button{
+    display: flex;
+  }
+  .main-nav{
+    display: none;
+    width: 100%;
+  }
+  .container{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main-nav ul{
+    width: 100%;
+    flex-direction: row;
+  }
+  .main-nav li{
+    text-align: center;
+  }
+  .main-nav li a{
+   padding: 0;
+  }
+  .main-nav.active{
+    display: flex;
+  }
+  .card-items img{
+    width: 90px;
+  }
+  .card-items{
+    width: 40%;
+  }
+}
+.text{
+  height: 100px;
+  padding-bottom: 200px;
+  text-align: center;
+  font-size: 300%;
+  color: white;
+  display: block;
+}
+
+.cards{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+}
+.conent img{
+  display: block;
+}
+.card-items{
+  border-radius: 15px;
+  width: 30%;
+  height: 20%;
+  background-color: rgba(203, 26, 238, 0.6);
+  border: 10px double white;
+  margin: 0;
+  padding: 1.5rem;
+  margin: 20px;
+  transition: all 500ms ease-in-out;
+}
+.card-items:hover{
+  transform: scale(1.1);
+}
+.message-head{
+  font-family: 'Birthstone', cursive;
+  font-size: 1.2em;
+}
+.name{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3em;
+  text-decoration:underline;
+}
+.message{
+  font-family: 'Maven Pro', sans-serif;
+}
+#footer{
+  color: white;
+  align-content: flex-end;
+}
