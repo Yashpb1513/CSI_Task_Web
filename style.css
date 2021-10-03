@@ -88,9 +88,10 @@ margin: 1rem;
     width: 90px;
   }
   .card-items{
-    width: 40%;
+    width: 100%;
   }
 }
+
 .text{
   height: 100px;
   padding-bottom: 200px;
@@ -101,24 +102,19 @@ margin: 1rem;
 }
 
 .cards{
-  display: flex;
-  justify-content:flex-start;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto;
   background-color: black;
-}
-.conent img{
-  display: block;
+  justify-content: space-between;
+  padding: 10px;
 }
 .card-items{
   border-radius: 15px;
-  width: 30%;
-  height: 20%;
   background-color: rgba(203, 26, 238, 0.6);
   border: 10px double white;
   margin: 0;
-  padding: 1.5rem;
-  margin: 20px;
+  padding: 10px;
   transition: all 500ms ease-in-out;
 }
 .card-items:hover{
